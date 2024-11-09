@@ -1,0 +1,16 @@
+.header-title {
+  font: var(--font-title);
+  letter-spacing: var(--font-title-spacing);
+  text-transform: uppercase;
+  margin: 0;
+}
+.header-intro {
+  font: var(--font-intro);
+  letter-spacing: var(--font-intro-spacing);
+}
+.header-image {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+}

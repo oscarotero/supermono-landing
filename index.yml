@@ -1,0 +1,89 @@
+title: SUPERMO.NO
+layout: layouts/landing.vto
+inverted: true
+container_class: center is-inverted
+show_navbar: false
+
+header:
+  title: Supermono
+  subtitle: Get superpowers for your Mailchimp account
+  button: Give me the power
+
+sections:
+  - title: Turn your mail list into a real **community**
+    img: /img/fiesta.svg
+    text: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie  semper lectus, nec posuere felis efficitur sit amet. Nullam non ex et  nibh fermentum fringilla. Vivamus auctor rhoncus magna vel mattis.  Pellentesque in lectus eu sem dapibus consectetur.
+
+  - title: Discover **what really appeals** to your audience
+    img: /img/prismaticos.svg
+    text: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie  semper lectus, nec posuere felis efficitur sit amet. Nullam non ex et  nibh fermentum fringilla. Vivamus auctor rhoncus magna vel mattis.  Pellentesque in lectus eu sem dapibus consectetur.
+
+  - title: "**Automate everything,** except writing"
+    img: /img/robot.svg
+    text: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie  semper lectus, nec posuere felis efficitur sit amet. Nullam non ex et  nibh fermentum fringilla. Vivamus auctor rhoncus magna vel mattis.  Pellentesque in lectus eu sem dapibus consectetur.
+
+substrack:
+  title: What about **Substrack?**
+  img: /img/grafica.svg
+  text: |
+    Is there a specific feature you’re missing? Do you want SUPERMONO to be available on your platform?
+
+    We have a public roadmap where you can see what we’re working on, give us feedback and help us prioritize what matter most to you.
+
+pricing:
+  title: Pricing
+  subtitle: No complex tiers. Just a simple plan.
+  cardTop: |
+    Full access
+
+    ### Free
+
+    - Unlimited subscribers
+    - Unlimited audiences
+
+  button: Get started
+  cardBottom: |
+    Are you looking for Corporate Support? [Let's talk](#)
+
+contact:
+  title: Contact
+  text: |
+    Do you want to chat with us? We’d be happy to talk with you! You can write to us at hello@supermo.no or ping us on any of our social media accounts:
+  social:
+    - name: Twitter
+    - name: Facebook
+    - name: LinkedIn
+    - name: GitHub
+    - name: Reddit
+
+faq:
+  - question: How does it work?
+    answer: |
+      No idea
+  - question: Do I need to pay for Mailchimp in order to use this?
+    answer: |
+      No idea
+  - question: I haven't started a newsletter. Is this going to be useful for me?
+    answer: |
+      No idea
+  - question: Are you GDPR Compliant?
+    answer: |
+      No idea
+  - question: Do you provide support for businesses?
+    answer: |
+      No idea
+  - question: If I don’t like SUPERMONO or feel it’s not helping my audience grow, can I just stop using it?
+    answer: |
+      No idea
+  - question: I have more questions!
+    answer: |
+      No idea
+
+footer:
+  copy: © 2024 BONILLAWARE SLU
+  links:
+    - text: Terms of service
+    - text: Privacy policy

@@ -1,0 +1,42 @@
+html {
+  scroll-padding-top: 120px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 320px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+:focus-visible {
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 2px;
+  outline-color: var(--color-red);
+}
+
+.main.is-inverted {
+  :focus-visible {
+    outline-color: var(--color-white);
+  }
+}

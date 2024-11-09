@@ -1,0 +1,96 @@
+.button,
+.form-file::file-selector-button {
+  --background: none;
+  --color: currentColor;
+
+  display: inline-flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--color);
+  background: var(--background);
+  cursor: pointer;
+  font: var(--font-text-bold);
+  letter-spacing: var(--font-text-spacing);
+  border-radius: var(--border-radius);
+  transition: background-color var(--duration);
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--background), black 15%);
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    cursor: default;
+    opacity: 0.33;
+    pointer-events: none;
+  }
+}
+.button.is-primary,
+.form-file::file-selector-button {
+  --background: var(--color-blue);
+  --color: var(--color-white);
+}
+.button.is-link {
+  font: var(--font-text);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+.button-icon {
+  --background: var(--color-red);
+  --color: var(--color-white);
+}
+
+.main.is-inverted {
+  .button.is-primary,
+  .form-file::file-selector-button {
+    --background: var(--color-blue);
+  }
+  .button-icon {
+    --background: var(--color-red);
+    --color: var(--color-blue);
+  }
+}
+
+.button-icon {
+  --background: none;
+  --color: currentColor;
+
+  display: inline-flex;
+  column-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--color);
+  background: var(--background);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: background-color var(--duration);
+
+  &:hover {
+    background-color: color-mix(in srgb, var(--background), black 15%);
+  }
+
+  &:disabled,
+  &[aria-disabled="true"] {
+    cursor: default;
+    opacity: 0.33;
+    pointer-events: none;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}

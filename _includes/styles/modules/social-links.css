@@ -1,0 +1,23 @@
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+
+  svg {
+    width: 24px;
+    fill: var(--color-blue);
+    display: block;
+  }
+
+  a {
+    padding: 8px;
+    border-radius: var(--border-radius);
+    &:hover {
+      background-color: color-mix(
+        in srgb,
+        var(--color-red) 90%,
+        var(--color-blue)
+      );
+    }
+  }
+}

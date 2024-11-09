@@ -1,0 +1,11 @@
+.subheader-title {
+  font: var(--font-title);
+  letter-spacing: var(--font-title-spacing);
+  text-transform: uppercase;
+  margin: 0;
+}
+.subheader-intro {
+  font: var(--font-text);
+  letter-spacing: var(--font-text-spacing);
+  text-wrap: balance;
+}

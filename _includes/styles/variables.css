@@ -1,0 +1,56 @@
+:root {
+  --color-red: #e55245;
+  --color-blue: #191980;
+  --color-white: #f6f8f9;
+
+  --font-family: Commissioner, sans-serif;
+  --border-radius: 5px;
+  --border-radius-big: 10px;
+
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-xbold: 900;
+
+  --font-size-4: clamp(30px, 8vw, 50px);
+  --font-size-3: clamp(20px, 4vw, 25px);
+  --font-size-2: clamp(18px, 3vw, 20px);
+  --font-size-1: clamp(14px, 2vw, 16px);
+  --font-size-0: 14px;
+
+  --font-title: italic var(--font-weight-bold) var(--font-size-4) / 1 var(
+    --font-family
+  );
+  --font-title-spacing: -0.015em;
+
+  --font-intro: var(--font-weight-normal) var(--font-size-3) / 1.4 var(
+    --font-family
+  );
+  --font-intro-bold: var(--font-weight-bold) var(--font-size-3) / 1.4 var(
+    --font-family
+  );
+  --font-intro-spacing: -0.01em;
+
+  --font-text: var(--font-weight-normal) var(--font-size-2) / 1.4 var(
+    --font-family
+  );
+  --font-text-bold: var(--font-weight-bold) var(--font-size-2) / 1.4 var(
+    --font-family
+  );
+  --font-text-spacing: 0;
+
+  --font-small: var(--font-weight-normal) var(--font-size-1) / 1.4 var(
+    --font-family
+  );
+  --font-small-bold: var(--font-weight-bold) var(--font-size-1) / 1.4 var(
+    --font-family
+  );
+  --font-xsmall: var(--font-weight-normal) var(--font-size-0) / 1.4 var(
+    --font-family
+  );
+  --font-xsmall-bold: var(--font-weight-bold) var(--font-size-0) / 1.4 var(
+    --font-family
+  );
+  --font-text-spacing: 0;
+
+  --duration: 200ms;
+}

@@ -1,0 +1,25 @@
+.page-list {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 40px;
+  grid-auto-rows: 1fr;
+
+  @media (width > 1000px) {
+    grid-template-columns: minmax(min-content, 20rem) 1fr;
+
+    .subheader {
+      align-self: start;
+      margin-top: calc(max(25vh, 100px) - 100px);
+      position: sticky;
+      top: 80px;
+    }
+  }
+
+  &:has(.navigation) {
+    grid-template-rows: auto auto;
+
+    @media (width > 1000px) {
+      grid-template-rows: auto;
+    }
+  }
+}

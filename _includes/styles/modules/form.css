@@ -1,0 +1,120 @@
+.form {
+  display: grid;
+  row-gap: 30px;
+  column-gap: 10px;
+  grid-auto-columns: minmax(0, 1fr);
+  justify-items: start;
+  max-width: 600px;
+
+  &.is-horizontal {
+    grid-auto-flow: column;
+    align-items: end;
+  }
+}
+
+.form-subtitle {
+  font: var(--font-intro-bold);
+  margin: 0;
+  border-bottom: solid 1px
+    color-mix(in srgb, var(--color-red) 90%, var(--color-blue));
+  justify-self: stretch;
+
+  &:not(:first-child) {
+    margin-top: 40px;
+  }
+}
+
+.form-field {
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+.form-label {
+  font: var(--font-small-bold);
+  letter-spacing: var(--font-small-spacing);
+  display: block;
+}
+
+.form-input {
+  --border: var(--color-blue);
+
+  border: solid 1px var(--border);
+  padding: 10px;
+  color: inherit;
+  background: var(--color-white);
+  color: var(--color-blue);
+  display: block;
+  width: 100%;
+  font: var(--font-text);
+  letter-spacing: var(--font-text-spacing);
+  border-radius: var(--border-radius);
+  transition: border-color var(--duration);
+
+  &:not(:focus) {
+    border-color: color-mix(in srgb, var(--border), white 50%);
+  }
+
+  &:disabled {
+    opacity: 0.33;
+    pointer-events: none;
+  }
+  &::placeholder {
+    color: currentColor;
+    opacity: 0.5;
+  }
+}
+textarea.form-input {
+  resize: vertical;
+}
+.form-file {
+  font: var(--font-small);
+  border-radius: var(--border-radius);
+
+  &::file-selector-button {
+    font: var(--font-small);
+  }
+}
+.form-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+select.form-select {
+  /* User settings */
+  --icon: url('data:image/svg+xml;charset=UTF-8,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m8 9.586 5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 1.414-1.414L8 9.586Z" fill="%23e55245"/></svg>');
+  --size: 1em;
+  --padding: 10px;
+  --background: var(--color-white);
+  border-radius: var(--border-radius);
+  font: var(--font-text);
+
+  /* Implementation */
+  appearance: none;
+  padding: var(--padding);
+  padding-right: calc(var(--size) + var(--padding));
+  border: none;
+  background: var(--icon) no-repeat center right var(--padding)
+    var(--background);
+  background-size: var(--size) var(--size);
+  color: inherit;
+  display: block;
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.33;
+    pointer-events: none;
+  }
+}
+
+.main.is-inverted {
+  .form-input {
+    border: none;
+  }
+}

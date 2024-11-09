@@ -1,0 +1,15 @@
+.hero {
+  text-align: center;
+  color: var(--color-white);
+  padding-block: min(80px, 25vh);
+
+  .main-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+.hero-intro {
+  font: var(--font-text-bold);
+  letter-spacing: var(--font-text-spacing);
+}

@@ -1,0 +1,16 @@
+.section {
+  font: var(--font-small);
+  color: var(--color-white);
+}
+
+.section-title {
+  margin: 0;
+  font: var(--font-text-bold);
+  color: var(--color-blue);
+}
+.section-intro {
+  text-wrap: pretty;
+  p {
+    margin: .5em 0 1em;
+  }
+}
