@@ -166,9 +166,14 @@
     text-align: left;
     width: fit-content;
     margin: 1em auto;
+    padding-left: 1em;
   }
   footer {
     font: var(--font-xsmall);
+    margin-top: 20px;
+  }
+  p {
+    margin: 0;
   }
 }
 .landing-contact {
@@ -184,6 +189,30 @@
   }
   p {
     margin: 0.5em 0 0;
+  }
+  address {
+    display: flex;
+    margin: 20px 0;
+    gap: 10px;
+    color: color-mix(in srgb, var(--color-blue) 20%, var(--color-white));
+    
+    a {
+      color: var(--color-red);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      &:hover {
+        background-color: color-mix(in srgb, var(--color-red) 20%, var(--color-white));
+
+      }
+    }
+
+    svg {
+      padding: 5px;
+      width: 40px;
+      height: 40px;
+      fill: currentColor;
+      display: block;
+    }
   }
 }
 .landing-faq {

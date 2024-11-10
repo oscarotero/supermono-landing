@@ -57,7 +57,13 @@ layout: ./base.vto
 
   <address>
   {{ for link of contact.social }}
-    <a href="/">{{ link.name }}</a>
+    {{ if link.url }}
+      <a href="{{ link.url }}" title="{{ link.name }}">
+        <img src="{{ link.icon |> icon("simpleicons") }}" inline>
+      </a>
+    {{ else }}
+      <img src="{{ link.icon |> icon("simpleicons") }}" inline>
+    {{ /if }}
   {{ /for }}
   </address>
 </section>

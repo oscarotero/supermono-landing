@@ -46,18 +46,24 @@ pricing:
 
   button: Get started
   cardBottom: |
-    Are you looking for Corporate Support? [Let's talk](#)
+    Are you looking for Corporate Support? [Let's talk](mailto:hello@supermo.no)
 
 contact:
   title: Contact
   text: |
-    Do you want to chat with us? We’d be happy to talk with you! You can write to us at hello@supermo.no or ping us on any of our social media accounts:
+    Do you want to chat with us? We’d be happy to talk with you! You can write to us at [hello@supermo.no](mailto:hello@supermo.no) or ping us on any of our social media accounts:
   social:
-    - name: Twitter
+    - name: X
+      icon: x
+      url: https://x.com/wearesupermono
     - name: Facebook
+      icon: facebook
     - name: LinkedIn
+      icon: linkedin
     - name: GitHub
+      icon: github
     - name: Reddit
+      icon: reddit
 
 faq:
   - question: How does it work?

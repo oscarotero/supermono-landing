@@ -4,9 +4,7 @@ import lightningcss from "lume/plugins/lightningcss.ts";
 import inline from "lume/plugins/inline.ts";
 import date from "lume/plugins/date.ts";
 import favicon from "lume/plugins/favicon.ts";
-
-import heroicons from "https://deno.land/x/lume_icon_plugins@v0.2.3/heroicons.ts";
-import simpleicons from "https://deno.land/x/lume_icon_plugins@v0.2.3/simpleicons.ts";
+import icons from "lume/plugins/icons.ts";
 
 const site = lume();
 
@@ -15,12 +13,8 @@ site.use(lightningcss());
 site.use(inline());
 site.use(date());
 site.use(favicon());
+site.use(icons());
 site.copy("img");
 site.copy("fonts");
-site.use(simpleicons());
-site.use(heroicons({
-  defaultType: "outline",
-}));
-site.copy("javascript");
 
 export default site;
