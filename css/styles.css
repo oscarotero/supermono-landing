@@ -3,6 +3,7 @@
 @import "styles/variables.css";
 
 @import "styles/modules/landing.css";
+@import "styles/modules/text.css";
 @import "styles/modules/header.css";
 @import "styles/modules/subheader.css";
 @import "styles/modules/hero.css";

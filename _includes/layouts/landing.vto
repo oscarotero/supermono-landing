@@ -2,90 +2,94 @@
 layout: ./base.vto
 ---
 
-<header class="landing-header">
-  <div>
-    <img class="landing-logo" src="/img/supermono.svg" inline>
-    <p>{{ header.subtitle }}</p>
-  </div>
-  <div aria-hidden="true">
-    <img class="landing-logo" src="/img/supermono.svg" inline>
-    <p>{{ header.subtitle }}</p>
-  </div>
+<body class="landing">
+  <div class="landing-content">
+    <header class="landing-header">
+      <div>
+        <img class="landing-logo" src="/img/supermono.svg" inline>
+        <p>{{ header.subtitle }}</p>
+      </div>
+      <div aria-hidden="true">
+        <img class="landing-logo" src="/img/supermono.svg" inline>
+        <p>{{ header.subtitle }}</p>
+      </div>
 
-  <a class="button is-primary" href="/">{{ header.button }}</a>
-</header>
+      <a class="button is-primary" href="mailto:hello@supermo.no">{{ header.button }}</a>
+    </header>
 
-{{ for section of sections }}
-<section class="landing-section">
-  <div>
-    <h2>{{ section.title |> md(true) }}</h2>
-    {{ section.text |> md }}
-  </div>
-  <img src="{{ section.img }}">
-</section>
-{{ /for }}
+    {{ for section of sections }}
+    <section class="landing-section">
+      <div>
+        <h2>{{ section.title |> md(true) }}</h2>
+        {{ section.text |> md }}
+      </div>
+      <img src="{{ section.img }}">
+    </section>
+    {{ /for }}
 
-<section class="landing-substrack">
-  <h2>{{ substrack.title |> md(true) }}</h2>
-  <div>
-    {{ substrack.text |> md }}
-  </div>
-  <img src="{{ substrack.img }}">
-</section>
+    <section class="landing-substrack">
+      <h2>{{ substrack.title |> md(true) }}</h2>
+      <div>
+        {{ substrack.text |> md }}
+      </div>
+      <img src="{{ substrack.img }}">
+    </section>
 
-<section class="landing-pricing">
-  <header>
-    <h2>{{ pricing.title }}</h2>
-    <p>{{ pricing.subtitle }}</p>
-  </header>
+    <section class="landing-pricing">
+      <header>
+        <h2>{{ pricing.title }}</h2>
+        <p>{{ pricing.subtitle }}</p>
+      </header>
 
-  <div class="landing-pricing-card">
-    {{ pricing.cardTop |> md }}
-    <a class="button is-primary" href="/">{{ pricing.button }}</a>
-    <footer>
-      {{ pricing.cardBottom |> md }}
+      <div class="landing-pricing-card">
+        {{ pricing.cardTop |> md }}
+        <a class="button is-primary" href="mailto:hello@supermo.no">{{ pricing.button }}</a>
+        <footer>
+          {{ pricing.cardBottom |> md }}
+        </footer>
+      </div>
+    </section>
+
+    <section class="landing-contact">
+      <h2>{{ contact.title |> md(true) }}</h2>
+
+      <div>
+        {{ contact.text |> md }}
+      </div>
+
+      <address>
+      {{ for link of contact.social }}
+        {{ if link.url }}
+          <a href="{{ link.url }}" title="{{ link.name }}">
+            <img src="{{ link.icon |> icon("simpleicons") }}" inline>
+          </a>
+        {{ else }}
+          <img src="{{ link.icon |> icon("simpleicons") }}" inline>
+        {{ /if }}
+      {{ /for }}
+      </address>
+    </section>
+
+    <section class="landing-faq">
+      {{ for item of faq }}
+      <details name="faq">
+        <summary>{{ item.question }}</summary>
+
+        <div>
+          {{ item.answer |> md }}
+        </div>
+      </details>
+      {{ /for }}
+    </section>
+
+    <footer class="landing-footer">
+      {{ footer.copy |> md }}
+
+      <ul class="landing-footer-links">
+      {{ for link of footer.links }}
+        <li><a href="{{ link.url }}">{{ link.text}}</a>
+      {{ /for }}
+      </ul>
     </footer>
   </div>
-</section>
-
-<section class="landing-contact">
-  <h2>{{ contact.title |> md(true) }}</h2>
-
-  <div>
-    {{ contact.text |> md }}
-  </div>
-
-  <address>
-  {{ for link of contact.social }}
-    {{ if link.url }}
-      <a href="{{ link.url }}" title="{{ link.name }}">
-        <img src="{{ link.icon |> icon("simpleicons") }}" inline>
-      </a>
-    {{ else }}
-      <img src="{{ link.icon |> icon("simpleicons") }}" inline>
-    {{ /if }}
-  {{ /for }}
-  </address>
-</section>
-
-<section class="landing-faq">
-  {{ for item of faq }}
-  <details name="faq">
-    <summary>{{ item.question }}</summary>
-
-    <div>
-      {{ item.answer |> md }}
-    </div>
-  </details>
-  {{ /for }}
-</section>
-
-<footer class="landing-footer">
-  {{ footer.copy |> md }}
-
-  <ul class="landing-footer-links">
-  {{ for link of footer.links }}
-    <li><a href="{{ link.url }}">{{ link.text}}</a>
-  {{ /for }}
-  </ul>
-</footer>
+</body>

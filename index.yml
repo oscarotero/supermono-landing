@@ -92,4 +92,6 @@ footer:
   copy: © 2024 BONILLAWARE SLU
   links:
     - text: Terms of service
+      url: /terms/
     - text: Privacy policy
+      url: /privacy-policy/
