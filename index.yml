@@ -10,28 +10,28 @@ header:
   button: Give me the power
 
 sections:
-  - title: Turn your mail list into a real **community**
+  - title: Turn your Mail List into **a real Community**
     img: /img/fiesta.svg
     text: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie  semper lectus, nec posuere felis efficitur sit amet. Nullam non ex et  nibh fermentum fringilla. Vivamus auctor rhoncus magna vel mattis.  Pellentesque in lectus eu sem dapibus consectetur.
+      Stop sending emails and start connecting with people. SUPERMONO lets you go beyond the inbox and build real relationships with your audience.
 
-  - title: Discover **what really appeals** to your audience
+  - title: Discover **what really appeals** to your Audience
     img: /img/prismaticos.svg
     text: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie  semper lectus, nec posuere felis efficitur sit amet. Nullam non ex et  nibh fermentum fringilla. Vivamus auctor rhoncus magna vel mattis.  Pellentesque in lectus eu sem dapibus consectetur.
+      Easily spot which topics grab people’s attention the most and which ones lead to more unsubscribes. Find out what works best and why.
 
-  - title: "**Automate everything,** except writing"
+  - title: "**Automate Everything** except Writing"
     img: /img/robot.svg
     text: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam molestie  semper lectus, nec posuere felis efficitur sit amet. Nullam non ex et  nibh fermentum fringilla. Vivamus auctor rhoncus magna vel mattis.  Pellentesque in lectus eu sem dapibus consectetur.
+      From reports for your sponsors to support flows for your audience. You focus on creating quality content, SUPERMONO will handle the rest.
 
 substrack:
   title: What about **Substrack?**
   img: /img/grafica.svg
   text: |
-    Is there a specific feature you’re missing? Do you want SUPERMONO to be available on your platform?
+    Is there a specific feature you're missing? Do you want SUPERMONO to be available on your platform?
 
-    We have a public roadmap where you can see what we’re working on, give us feedback and help us prioritize what matter most to you.
+    We have a [public roadmap](https://trello.com/b/8Yp8bK7s/supermono-roadmap) where you can see what we're working on, give us feedback, and help us prioritize what matters most to you.
 
 pricing:
   title: Pricing
@@ -62,25 +62,25 @@ contact:
 faq:
   - question: How does it work?
     answer: |
-      No idea
+      Connect your mailchimp account to SUPEREMONO and start enhancing your Community. That's it!
   - question: Do I need to pay for Mailchimp in order to use this?
     answer: |
-      No idea
+      Only if you need to pay due to the number of contacts or the volume of emails you send. Check out [Mailchimp's Pricing page](https://mailchimp.com/pricing/marketing).
   - question: I haven't started a newsletter. Is this going to be useful for me?
     answer: |
-      No idea
+      Absolutely! This resource is created to help any content creator who is considering starting a newsletter, or already has started writing one & wants to build a Community around it.
   - question: Are you GDPR Compliant?
     answer: |
-      No idea
+      Yup. We don’t store any personal data of your subscribers, and as a data processor, we update or delete their data as soon as Mailchimp does.
   - question: Do you provide support for businesses?
     answer: |
-      No idea
-  - question: If I don’t like SUPERMONO or feel it’s not helping my audience grow, can I just stop using it?
+      Of course we do! Just [drop us a mail](mailto:hello@supermo.no), and we’ll get back to you ASAP.
+  - question: If I don't like SUPERMONO or I feel it's not helping my audience grow, can I stop using it whenever I want?
     answer: |
-      No idea
+      Whenever you want. Your audience, your rules.
   - question: I have more questions!
     answer: |
-      No idea
+      Just [reach out to us](mailto:hello@supermo.no), and let’s see if we have the answers!
 
 footer:
   copy: © 2024 BONILLAWARE SLU

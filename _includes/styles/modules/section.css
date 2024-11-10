@@ -11,6 +11,6 @@
 .section-intro {
   text-wrap: pretty;
   p {
-    margin: .5em 0 1em;
+    margin: 0.5em 0 1em;
   }
 }

@@ -1,32 +1,76 @@
-.landing-content {
+.landing {
   display: grid;
-  grid-template-columns: 1fr [start] minmax(0, 500px) [center] minmax(0, 500px) [end] 1fr;
+  grid-template-columns:
+    1fr [start] minmax(0, 500px) [center] minmax(0, 500px) [end] 1fr;
   justify-content: center;
   column-gap: 5vw;
+  background-color: var(--color-white);
 
+  &::after {
+    content: "";
+    display: block;
+    grid-row: 1;
+    grid-column: 1 / center;
+    background-color: var(--color-red);
+    margin: 20px -2.5vw 20px 20px;
+    border-radius: var(--border-radius-big);
+  }
+}
+.landing-content {
+  z-index: 1;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  grid-template-columns: subgrid;
+  row-gap: 100px;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    grid-column: start/end;
+  }
 }
 .landing-header {
   grid-column: start / end;
   text-align: center;
   padding-top: min(20vh, 150px);
   padding-bottom: min(20vh, 150px);
+  display: grid;
+  justify-items: center;
+
+  > div {
+    --color-1: var(--color-red);
+    --color-2: var(--color-white);
+
+    grid-row: 1;
+    grid-column: 1;
+  }
+  > div:first-child {
+    --color-1: var(--color-red);
+    clip-path: inset(0 0 0 50%);
+  }
+  > div:nth-child(2) {
+    --color-1: var(--color-white);
+    clip-path: inset(0 50% 0 0);
+  }
 
   p {
+    color: var(--color-1);
     font: var(--font-intro);
     letter-spacing: var(--font-intro-spacing);
-    color: var(--color-red);
     margin: 20px 0 min(20vh, 100px);
     text-wrap: balance;
   }
 }
 
 .landing-logo {
-  fill: var(--color-red);
+  fill: var(--color-1);
   width: min(70vw, 800px);
   height: auto;
 
   .logo-banana {
-    fill: var(--color-white);
+    fill: var(--color-2);
   }
 }
 .landing-substrack,
@@ -49,6 +93,13 @@
     order: -1;
   }
 }
+.landing-section:nth-child(even) {
+  color: var(--color-white);
+
+  > div {
+    justify-self: center;
+  }
+}
 .landing-section {
   color: var(--color-red);
   font: var(--font-small);
@@ -61,10 +112,10 @@
   }
 }
 .landing-substrack {
+  background-color: var(--color-white);
   color: var(--color-red);
   font: var(--font-small);
   padding: min(50px, 5vw);
-  border: solid 1px;
   border-radius: var(--border-radius-big);
 
   h2 {
@@ -87,18 +138,20 @@
   color: var(--color-red);
 
   > header {
+    color: var(--color-white);
+
     h2 {
       margin: 0;
       font: var(--font-text-bold);
     }
     p {
-      margin: .5em 0 0;
+      margin: 0.5em 0 0;
     }
   }
 }
 .landing-pricing-card {
   border-radius: var(--border-radius-big);
-  border: solid 1px;
+  background-color: var(--color-white);
   margin: 20px auto 0;
   width: fit-content;
   padding: min(20px, 5vw);
@@ -123,29 +176,57 @@
   font: var(--font-small);
   max-width: 400px;
   color: var(--color-red);
+  align-self: center;
 
   h2 {
     margin: 0;
     font: var(--font-text-bold);
   }
   p {
-    margin: .5em 0 0;
+    margin: 0.5em 0 0;
   }
 }
 .landing-faq {
   grid-column: start / end;
   display: grid;
-  grid-template-columns: subgrid;
-  
+
   details {
-    grid-column: start / center;
     display: grid;
     position: relative;
 
+    > summary {
+      width: 50%;
+      list-style: none;
+      font: var(--font-text-bold);
+      line-height: 1.2;
+      padding: 20px 60px 20px 20px;
+      cursor: pointer;
+      border-radius: var(--border-radius-big) 0 0 var(--border-radius-big);
+      color: var(--color-white);
+    }
+
     > div {
       position: absolute;
-      left: 100%;
+      left: 50%;
       top: 0;
+      width: 50%;
+      font: var(--font-text);
+      padding: 0.5em 0;
+      box-sizing: border-box;
+      padding-left: 2.5vw;
+      color: var(--color-red);
+
+      p {
+        margin: 0 0 0.5em 0;
+      }
+    }
+
+    &[open] > summary {
+      background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.626 4.76611L21.126 12.2661M21.126 12.2661L13.626 19.7661M21.126 12.2661H3.12598" stroke="%23e55245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+      background-position: right 20px top 20px;
+      background-repeat: no-repeat;
+      background-color: var(--color-white);
+      color: var(--color-red);
     }
   }
 }
@@ -153,6 +234,24 @@
   grid-column: start / end;
   display: grid;
   grid-template-columns: subgrid;
+  font: var(--font-xsmall);
+
+  p {
+    margin: 0;
+    text-align: right;
+    color: var(--color-white);
+  }
+}
+.landing-footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 1em;
+
+  a {
+    color: var(--color-red);
+  }
 }
 
 .main {

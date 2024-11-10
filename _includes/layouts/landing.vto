@@ -3,8 +3,14 @@ layout: ./base.vto
 ---
 
 <header class="landing-header">
-  <img class="landing-logo" src="/img/supermono.svg" inline>
-  <p>{{ header.subtitle }}</p>
+  <div>
+    <img class="landing-logo" src="/img/supermono.svg" inline>
+    <p>{{ header.subtitle }}</p>
+  </div>
+  <div aria-hidden="true">
+    <img class="landing-logo" src="/img/supermono.svg" inline>
+    <p>{{ header.subtitle }}</p>
+  </div>
 
   <a class="button is-primary" href="/">{{ header.button }}</a>
 </header>
@@ -71,7 +77,7 @@ layout: ./base.vto
 <footer class="landing-footer">
   {{ footer.copy |> md }}
 
-  <ul>
+  <ul class="landing-footer-links">
   {{ for link of footer.links }}
     <li><a href="{{ link.url }}">{{ link.text}}</a>
   {{ /for }}

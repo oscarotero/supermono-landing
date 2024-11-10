@@ -3,7 +3,7 @@
   grid-template-columns: repeat(auto-fit, 250px);
   gap: 40px;
   margin: auto;
-  
+
   @media (width < 700) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
