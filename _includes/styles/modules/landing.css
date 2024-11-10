@@ -221,12 +221,16 @@
       }
     }
 
-    &[open] > summary {
-      background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.626 4.76611L21.126 12.2661M21.126 12.2661L13.626 19.7661M21.126 12.2661H3.12598" stroke="%23e55245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-      background-position: right 20px top 20px;
-      background-repeat: no-repeat;
-      background-color: var(--color-white);
-      color: var(--color-red);
+    &[open] {
+      z-index: 1;
+
+      > summary {
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.626 4.76611L21.126 12.2661M21.126 12.2661L13.626 19.7661M21.126 12.2661H3.12598" stroke="%23e55245" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+        background-position: right 20px top 20px;
+        background-repeat: no-repeat;
+        background-color: var(--color-white);
+        color: var(--color-red);
+      }
     }
   }
 }
