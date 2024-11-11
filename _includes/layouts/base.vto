@@ -10,5 +10,17 @@ show_navbar: true
   <link rel="stylesheet" href="/css/styles.css">
   <title>{{ title }}</title>
 </head>
-  {{ content }}
+<body class="main {{ inverted ? 'is-inverted' : '' }}">
+  {{ if show_navbar }}  
+  <div class="main-navbar">
+    <a href="/">
+      <img class="main-logo" src="/img/supermono.svg" inline>
+    </a>
+  </div>
+  {{ /if }}
+
+  <div class="main-content {{ container_class }}">
+    {{ content }}
+  </div>
+</body>
 </html>
