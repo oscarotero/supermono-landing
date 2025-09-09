@@ -7,7 +7,7 @@ layout: layouts/texts.vto
 ## 1. Propiedad del sitio
 
 **1.1.** El siguiente documento (denominado a partir de ahora como «TÉRMINOS DE
-USO») regula el uso de la web **trgcon.com** (de ahora en adelante «el SITIO
+USO») regula el uso de la web **supermo.no** (de ahora en adelante «el SITIO
 WEB») gestionada por BONILLAWARE S.L.U. (de ahora en adelante, «BONILLAWARE»).
 
 **1.2.** El SITIO WEB es propiedad de BONILLAWARE, empresa con domicilio social
@@ -40,10 +40,7 @@ servicios o características.
 
 ## 3. Objetivo
 
-**3.1.** El SITIO WEB tiene como propósito principal publicar artículos e
-informar al USUARIO de las actividades desarrolladas por BONILLAWARE o
-cualquiera de sus empleados, así como publicitar sus posibles servicios o
-productos.
+**3.1.** El SITIO WEB tiene como propósito principal dar acceso e informar al USUARIO sobre el servicio digital SUPERMONO desarrollado por BONILLAWARE.
 
 **3.2.** BONILLAWARE puede —dependiendo del desarrollo y evolución de sus
 productos y servicios— expandir o modificar este SITIO WEB, incluyendo o
@@ -159,5 +156,5 @@ atribución del mismo.
 ## 7. Privacidad y confidencialidad
 
 El USUARIO conoce y acepta la
-[Política de Privacidad](https://www.bonillaware.com/politica-de-privacidad) del
+[Política de Privacidad](https://supermo.no/privacy-policy/) del
 SITIO WEB.
